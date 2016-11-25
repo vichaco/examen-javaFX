@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@vista/images/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <Label stylesheets="@micss.css" text="My Profile" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Antonio Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <children>
+                        <Label text="Jay R.">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Doyou know me?!" />
+                           </tooltip>
+                        </Label>
+                        <Label text="Programmer can design" textFill="#5e5b5b">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Button graphicTextGap="3.0" mnemonicParsing="false" onAction="#sendStage" prefHeight="114.0" prefWidth="119.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/migel/workspaceInterfaces/Prueba%20javaFX%20Miguel%20Contreras/src/vista/images/send.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@vista/images/github_white.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="24.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="471.0" text="View in GitHub" textFill="#1e1e1e" textOverrun="WORD_ELLIPSIS" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="24.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                     </cursor>
+                     <effect>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </effect></Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</fx:root>
