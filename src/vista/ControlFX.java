@@ -36,7 +36,7 @@ public class ControlFX {
 	    }
 
 		/**
-	     * abrimos la segunda ventana enviando la informacion necesaria
+	     * abrimos la segunda ventana enviando la informacion necesaria  
 	     */
 	    
 	    public void showSendProfile() {
